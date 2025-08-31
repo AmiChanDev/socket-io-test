@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "ES2020", // Modern JavaScript output
+    "module": "nodenext", // Use Node ESM
+    "rootDir": "./src", // Your source files folder
+    "outDir": "./dist", // Compiled JS output folder
+    "strict": true, // Enable all strict type-checking options
+    "esModuleInterop": true, // Enable interop for CommonJS modules
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true, // Required for ts-node/tsx
+    "verbatimModuleSyntax": true, // Type-only imports must use 'import type'
+    /* Type Checking Options */
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "skipLibCheck": true, // Skip checking node_modules for speed
+    /* Output Options */
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    /* JSX (if you have React frontend) */
+    "jsx": "react-jsx",
+    /* Node types */
+    "types": [
+      "node"
+    ]
+  },
+  "include": [
+    "src/**/*"
+  ], // Include all TS files in src
+  "exclude": [
+    "node_modules",
+    "dist"
+  ] // Exclude compiled output and dependencies
+}
